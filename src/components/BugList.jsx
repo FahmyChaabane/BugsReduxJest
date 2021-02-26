@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { startResolveBug, startAssignBugToUser } from "../actions/bugs";
 import { getUnresolvedBugSelector } from "../selectors/bugs";
 
-const BugList = () => {
+export const BugList = () => {
   const dispatch = useDispatch();
   const bugs = useSelector(getUnresolvedBugSelector);
   return (

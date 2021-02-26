@@ -11,6 +11,7 @@ const store = configureStore();
 
 console.log(store.getState());
 store.dispatch(ADD_USER({ id: 99, name: "a" }));
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
